@@ -133,23 +133,30 @@ __info.html__ - информация о проекте.
     │   │   views.py
     │   __media__
     │   │   __images__
-    │   │   │   755839969305200.jpg
-    │   │   │   boat.jpg
-    │   │   │   full_Horses_Dogs_Winter_Run_Snow_525001_4288x2063.jpg
-    │   │   │   i.jpg
-    │   │   │   pipls.jpg
-    │   │   │   raskladno.jpg
+    │   │   │   001.jpg
+    │   │   │   002.jpg
+    │   │   │   003.jpg
+    │   │   │   004.jpg
+    │   │   │   005.jpg
+    │   │   │   006.jpg
+    │   │   │   007.jpg
+    │   │   │   008.jpg
+    │   │   │   009.jpg
     │   │   __processed_images__
     │   │   │   __processed_images__
-    │   │   │   │   755839969305200.jpg
-    │   │   │   │   boat.jpg
-    │   │   │   │   full_Horses_Dogs_Winter_Run_Snow_525001_4288x2063.jpg
-    │   │   │   │   i.jpg
-    │   │   │   │   pipls.jpg
-    │   │   │   │   raskladno.jpg
+    │   │   │   │   001.jpg
+    │   │   │   │   002.jpg
+    │   │   │   │   003.jpg
+    │   │   │   │   004.jpg
+    │   │   │   │   005.jpg
+    │   │   │   │   006.jpg
+    │   │   │   │   007.jpg
+    │   │   │   │   008.jpg
+    │   │   │   │   009.jpg
     │   │   __profile_images__
-    │   │   │   scale_1200.jpg
-    │   │   │   Аватар_BuRt6TV.jpg
+    │   │   │   user1.jpg
+    │   │   │   user2.jpg
+    │   │   │   user3.jpg
     │   │   default.jpg
     │   __static__
     │   __users__
