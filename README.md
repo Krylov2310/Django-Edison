@@ -117,73 +117,73 @@ __info.html__ - информация о проекте.
     │   │   asgi.py
     │   │   settings.py
     │   │   urls.py
-│   │   wsgi.py
-│   __image_job__
-│   │   __migrations__
-│   │   │   0001_initial.py
-│   │   │   __ __init__ __.py
-│   │   __ __init__ __.py
-│   │   admin.py
-│   │   apps.py
-│   │   forms.py
-│   │   mechanics.py
-│   │   mobilenet_iter_73000.caffemodel
-│   │   mobilenet_ssd_deploy.prototxt
-│   │   models.py
-│   │   views.py
-│   __media__
-│   │   __images__
-│   │   │   755839969305200.jpg
-│   │   │   boat.jpg
-│   │   │   full_Horses_Dogs_Winter_Run_Snow_525001_4288x2063.jpg
-│   │   │   i.jpg
-│   │   │   pipls.jpg
-│   │   │   raskladno.jpg
-│   │   __processed_images__
-│   │   │   __processed_images__
-│   │   │   │   755839969305200.jpg
-│   │   │   │   boat.jpg
-│   │   │   │   full_Horses_Dogs_Winter_Run_Snow_525001_4288x2063.jpg
-│   │   │   │   i.jpg
-│   │   │   │   pipls.jpg
-│   │   │   │   raskladno.jpg
-│   │   __profile_images__
-│   │   │   scale_1200.jpg
-│   │   │   Аватар_BuRt6TV.jpg
-│   │   default.jpg
-│   __static__
-│   __users__
-│   │   __migrations__
-│   │   │   0001_initial.py
-│   │   │   __ __init__ __.py
-│   │   __templates__
-│   │   │   __images__
-│   │   │   │   add_image_feed.html
-│   │   │   │   add_video_feed.html
-│   │   │   │   dashboard.html
-│   │   │   │   home.html
-│   │   │   __users__
-│   │   │   │   base.html
-│   │   │   │   change_password.html
-│   │   │   │   home.html
-│   │   │   │   info.html
-│   │   │   │   login.html
-│   │   │   │   logout.html
-│   │   │   │   password_reset.html
-│   │   │   │   password_reset_complete.html
-│   │   │   │   password_reset_confirm.html
-│   │   │   │   password_reset_email.html
-│   │   │   │   password_reset_subject
-│   │   │   │   profile.html
-│   │   │   │   register.html
-│   │   │   __ __init__ __.py
-│   │   admin.py
-│   │   apps.py
-│   │   forms.py
-│   │   models.py
-│   │   signals.py
-│   │   urls.py
-│   │   views.py
+    │   │   wsgi.py
+    │   __image_job__
+    │   │   __migrations__
+    │   │   │   0001_initial.py
+    │   │   │   __ __init__ __.py
+    │   │   __ __init__ __.py
+    │   │   admin.py
+    │   │   apps.py
+    │   │   forms.py
+    │   │   mechanics.py
+    │   │   mobilenet_iter_73000.caffemodel
+    │   │   mobilenet_ssd_deploy.prototxt
+    │   │   models.py
+    │   │   views.py
+    │   __media__
+    │   │   __images__
+    │   │   │   755839969305200.jpg
+    │   │   │   boat.jpg
+    │   │   │   full_Horses_Dogs_Winter_Run_Snow_525001_4288x2063.jpg
+    │   │   │   i.jpg
+    │   │   │   pipls.jpg
+    │   │   │   raskladno.jpg
+    │   │   __processed_images__
+    │   │   │   __processed_images__
+    │   │   │   │   755839969305200.jpg
+    │   │   │   │   boat.jpg
+    │   │   │   │   full_Horses_Dogs_Winter_Run_Snow_525001_4288x2063.jpg
+    │   │   │   │   i.jpg
+    │   │   │   │   pipls.jpg
+    │   │   │   │   raskladno.jpg
+    │   │   __profile_images__
+    │   │   │   scale_1200.jpg
+    │   │   │   Аватар_BuRt6TV.jpg
+    │   │   default.jpg
+    │   __static__
+    │   __users__
+    │   │   __migrations__
+    │   │   │   0001_initial.py
+    │   │   │   __ __init__ __.py
+    │   │   __templates__
+    │   │   │   __images__
+    │   │   │   │   add_image_feed.html
+    │   │   │   │   add_video_feed.html
+    │   │   │   │   dashboard.html
+    │   │   │   │   home.html
+    │   │   │   __users__
+    │   │   │   │   base.html
+    │   │   │   │   change_password.html
+    │   │   │   │   home.html
+    │   │   │   │   info.html
+    │   │   │   │   login.html
+    │   │   │   │   logout.html
+    │   │   │   │   password_reset.html
+    │   │   │   │   password_reset_complete.html
+    │   │   │   │   password_reset_confirm.html
+    │   │   │   │   password_reset_email.html
+    │   │   │   │   password_reset_subject
+    │   │   │   │   profile.html
+    │   │   │   │   register.html
+    │   │   │   __ __init__ __.py
+    │   │   admin.py
+    │   │   apps.py
+    │   │   forms.py
+    │   │   models.py
+    │   │   signals.py
+    │   │   urls.py
+    │   │   views.py
 ***
 ##### Приложение 2. Список необходимых библиотек
     Django==5.0.6
