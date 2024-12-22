@@ -107,16 +107,16 @@ __info.html__ - информация о проекте.
 ***
 #### Приложение 1. Пример файловой структуры проекта
 
-__Django-Edison__
-│   README.md
-│   requirements.txt
-│   manage.py
-│   db.sqlite3
-│   __django_sit__
-│   │  _ __init__ _.py
-│   │   asgi.py
-│   │   settings.py
-│   │   urls.py
+    __Django-Edison__
+    │   README.md
+    │   requirements.txt
+    │   manage.py
+    │   db.sqlite3
+    │   __django_sit__
+    │   │  _ __init__ _.py
+    │   │   asgi.py
+    │   │   settings.py
+    │   │   urls.py
 │   │   wsgi.py
 │   __image_job__
 │   │   __migrations__
