@@ -1,0 +1,13 @@
+{% extends "users/base.html" %}
+{% block title %}Logout{% endblock title %}
+{% block content %}
+    <div class="card" style="width: 18rem;">
+        <div class="card-body">
+        <h5 class="card-title"><b>Вы вышли из системы</b></h5>
+        <p class="card-text">
+            <b>Спасибо что воспользовались услугами нашего сайта</b>
+        </p>
+        <br><hr><a href="{% url 'login' %}" class="btn btn-primary"><b>Войдите в систему еще раз</b></a>
+        </div>
+    </div>
+{% endblock content %}

@@ -1,0 +1,12 @@
+{% extends "users/base.html" %}
+{% block title %} Добавить изображение {{ user.username.title }}{% endblock title%}
+{% block content %}
+<!--<h2><b>{{ title_base }}</b></h2>-->
+<form method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+    <div>
+        <b>{{ form.as_p }}</b>
+    </div>
+    <button type="submit" class="btn btn-dark btn-lg"><b>Загрузите изображение</b></button>
+</form>
+{% endblock %}

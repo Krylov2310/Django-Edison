@@ -1,0 +1,60 @@
+{% extends "users/base.html" %}
+{% block title %} Dashboard - {{ user.username.title }}{% endblock title%}
+{% block content %}
+<h3>Dashboard:<br>Изображения пользователя {{ user.username.title }}</h3>
+<a href="{% url 'add_image_feed' %}" class="btn btn-primary mb-3">Добавить изображение</a>
+{% for feed in image_feeds %}
+<div class="card mb-3">
+    <div class="card-header">
+        <center><a href="{% url 'process_feed' feed.id %}" class="btn btn-secondary">Проверить изображение</a></center>
+    </div>
+    <table>
+        <th>
+            <center><b>Ваше изображение:</b></center>
+        </th>
+        <th>
+            <b>
+                <center>Распознанное изображение:</center>
+            </b>
+        </th>
+        <th>
+            <b>Классификация объектов на фото:</b>
+        </th>
+        <tbody>
+        <td>
+            <a href="{{ feed.image.url }}" target="_blank">
+                <center><img src="{{ feed.image.url }}" alt="Original Image" style="width: 150px; height: 150px;">
+                </center>
+            </a>
+        </td>
+        <td>
+            {% if feed.processed_image %}
+            <a href="{{ feed.processed_image.url }}" target="_blank">
+                <center><img src="{{ feed.processed_image.url }}" alt="Processed Image"
+                             style="width: 100px; height: 100px;"></center>
+            </a>
+            {% else %}
+            <b>
+                <center>Данный объект не распознан!</center>
+            </b>
+            {% endif %}
+        </td>
+        <td> <!-- Ячейка классификации -->
+            <ol>
+                {% for obj in feed.detected_objects.all %}
+                <li><b>{{ obj.object_type }} - {{ obj.confidence|floatformat:2 }}</b></li>
+                {% endfor %}
+            </ol>
+        </td>
+        </tbody>
+    </table>
+    <form action="{% url 'delete_image' feed.id %}" method="post">
+        {% csrf_token %}
+        <hr size="1">
+        <center>
+            <button type="submit"><b>Удалить</b></button>
+        </center>
+    </form>
+</div>
+{% endfor %}
+{% endblock %}

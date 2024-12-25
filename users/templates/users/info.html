@@ -1,0 +1,12 @@
+{% extends 'users/base.html' %}
+{% block title %}Страница навигации {{ user.username.title }}{% endblock %}
+{% block content %}
+<div class="card mb-3">
+<ins><h3><center>{{student}}</center></h3></ins>
+    <h4>
+        <center>{{job}}</center>
+        <hr size="1">
+        <center>&#160;&#160;{{info}}</center>
+    </h4>
+</div>
+{% endblock %}

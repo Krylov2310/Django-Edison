@@ -1,0 +1,62 @@
+{% extends "users/base.html" %}
+{% block title %}Профиль пользователя {{ user.username.title }}{% endblock title %}
+{% block content %}
+
+<div class="navbar-nav ml-auto">
+    {% if user.is_authenticated %}
+    {% if user.is_superuser %}
+    <div class="row my-3 p-3">
+        <img class="rounded-circle account-img" src="{{ user.profile.avatar.url }} " style="cursor: pointer;"/>
+        <h3><b>Профиль: {{ user.username.title }}, статус - Владелец</b></h3>
+    </div>
+    {% else %}
+    <div class="row my-3 p-3">
+        <img class="rounded-circle account-img" src="{{ user.profile.avatar.url }} " style="cursor: pointer;"/>
+        <h3><b>Профиль: {{ user.username.title }}, статус - Пользователь</b></h3>
+    </div>
+    {% endif %}
+    {% endif %}
+</div>
+{% if user_form.errors %}
+<div class="alert alert-danger alert-dismissible" role="alert">
+    <div id="form_errors">
+        {% for key, value in user_form.errors.items %}
+        <strong>{{ value }}</strong>
+        {% endfor %}
+    </div>
+    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+    </button>
+</div>
+{% endif %}
+<div class="form-content">
+    <form method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+        <div class="form-row">
+            <div class="col-md-5">
+                <div class="form-group">
+                    <label class="small mb-1"><b>Логин:</b></label>
+                    {{ user_form.username }}
+                    <label class="small mb-1"><b>Имя:</b></label><br>
+                    {{ user_form.first_name }}
+                    <br><label class="small mb-1"><b>Фамилия:</b></label><br>
+                    {{ user_form.last_name }}
+                    <br><label class="small mb-1"><b>Email:</b></label><br>
+                    {{ user_form.email }}
+                </div>
+                <div class="form-group">
+                    <a href="{% url 'password_change' %}"><b>Сменить пароль</b></a>
+                </div>
+                <label class="small mb-1"><b>О себе:</b></label> {{ profile_form.bio }}
+            </div>
+        </div>
+        <div>
+            <label class="small mb-1"><b>Сменить фото</b></label>
+            {{profile_form.avatar}}
+        </div>
+        <br><br>
+        <button type="submit" class="btn btn-dark btn-lg"><b>Сохранить</b></button>
+        <button type="reset" class="btn btn-dark btn-lg"><b>Отмена</b></button>
+    </form>
+</div>
+{% endblock content %}
